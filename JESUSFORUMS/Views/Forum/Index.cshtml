@@ -1,0 +1,18 @@
+﻿@model JESUSFORUMS.Models.Forums.ForumIndex
+
+<h1>Forums</h1>
+<table class="table table-hover" id="forumIndextable">
+    <tbody>
+    foreach (var forum in Model.ForumList)
+    {
+        <tr>
+            <td>
+                @forums.Name
+            </td>
+            <td>
+                @forums.Description
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
